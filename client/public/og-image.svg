@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Brand Loom — AI Socratic Brand Identity Studio</title>
+  <desc id="desc">Turn unformed concepts into enduring, production-ready brand identities.</desc>
+  <rect width="1200" height="630" fill="#f2f1ed"/>
+  <circle cx="1010" cy="120" r="250" fill="#e3e1d9"/>
+  <circle cx="1010" cy="120" r="166" fill="none" stroke="#000" stroke-width="2"/>
+  <path d="M1010 -46a166 166 0 0 0 0 332" fill="none" stroke="#000" stroke-width="2"/>
+  <text x="96" y="170" fill="#000" font-family="Georgia, serif" font-size="76" letter-spacing="-2">Brand Loom</text>
+  <text x="100" y="254" fill="#000" font-family="Arial, sans-serif" font-size="28" letter-spacing="5">AI SOCRATIC BRAND IDENTITY STUDIO</text>
+  <line x1="100" y1="322" x2="600" y2="322" stroke="#000" stroke-width="2"/>
+  <text x="100" y="390" fill="#000" font-family="Arial, sans-serif" font-size="30">From unformed concepts</text>
+  <text x="100" y="435" fill="#000" font-family="Arial, sans-serif" font-size="30">to enduring brand systems.</text>
+  <text x="100" y="550" fill="#555" font-family="monospace" font-size="18" letter-spacing="3">BRAND-LOOM.VERCEL.APP</text>
+</svg>
