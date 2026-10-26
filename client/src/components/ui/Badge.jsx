@@ -1,0 +1,2 @@
+import React from 'react';
+export default function Badge({ children, tone = 'neutral' }) { const tones = { neutral: 'bg-[color-mix(in_srgb,var(--sand)_35%,transparent)] text-muted', accent: 'bg-[color-mix(in_srgb,var(--terracotta)_12%,transparent)] text-terracotta', demo: 'bg-[color-mix(in_srgb,var(--olive)_18%,transparent)] text-[var(--success)]' }; return <span className={`inline-flex items-center rounded-full px-2.5 py-1 text-[11px] font-semibold ${tones[tone]}`}>{children}</span>; }

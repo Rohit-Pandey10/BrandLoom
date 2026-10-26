@@ -7,17 +7,14 @@ export default {
   theme: {
     extend: {
       colors: {
-        'paper-cream': '#f2f1ed',
-        'warm-border': '#dbd7cd',
-        'ink-black': '#000000',
-        'stone-gray': '#737373',
-        'ash-gray': '#999999',
-        'pure-white': '#ffffff',
+        canvas: 'var(--canvas)', surface: 'var(--surface)', sand: 'var(--sand)', terracotta: 'var(--terracotta)', olive: 'var(--olive)', charcoal: 'var(--charcoal)', muted: 'var(--muted)', line: 'var(--line)',
+        'paper-cream': 'var(--canvas)', 'warm-border': 'var(--line)', 'ink-black': 'var(--charcoal)', 'stone-gray': 'var(--muted)', 'ash-gray': 'var(--muted)', 'pure-white': 'var(--surface)',
       },
       fontFamily: {
-        serif: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+        display: ['"Playfair Display"', 'Georgia', 'serif'],
+        serif: ['"Playfair Display"', 'Georgia', 'serif'],
         sans: ['Inter', 'sans-serif'],
-        mono: ['"JetBrains Mono"', 'ui-monospace', 'monospace'],
+        mono: ['Inter', 'ui-sans-serif', 'sans-serif'],
       },
       animation: {
         'fade-in': 'fadeIn 0.25s ease-out',

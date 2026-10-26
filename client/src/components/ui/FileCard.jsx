@@ -1,0 +1,4 @@
+import React from 'react';
+import { FileDown, Lock } from 'lucide-react';
+import Badge from './Badge';
+export default function FileCard({ title, formats = [], preview, onClick, disabled = false, description }) { return <article className="rounded-xl border border-line bg-surface p-3"><div className="mb-3 grid aspect-[4/3] place-items-center overflow-hidden rounded-lg bg-[color-mix(in_srgb,var(--sand)_38%,var(--surface))]">{preview}</div><div className="flex items-start justify-between gap-2"><div><h4 className="text-xs font-semibold">{title}</h4>{description && <p className="mt-1 text-[11px] text-muted">{description}</p>}</div>{disabled ? <Lock className="h-4 w-4 text-muted" /> : <button onClick={onClick} aria-label={`Download ${title}`} className="text-terracotta"><FileDown className="h-4 w-4" /></button>}</div><div className="mt-3 flex gap-1">{formats.map(format => <Badge key={format}>{format}</Badge>)}{disabled && <Badge>Coming soon</Badge>}</div></article>; }

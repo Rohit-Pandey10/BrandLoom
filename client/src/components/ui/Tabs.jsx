@@ -1,0 +1,2 @@
+import React from 'react';
+export default function Tabs({ tabs, active, onChange, className = '' }) { return <nav className={`app-tabs flex gap-5 overflow-x-auto border-b border-line hide-scrollbar ${className}`} aria-label="Brand kit sections">{tabs.map(tab => <button key={tab.id} type="button" onClick={() => onChange(tab.id)} className={`shrink-0 border-b-2 px-1 pb-3 text-xs font-medium transition ${active === tab.id ? 'border-terracotta text-terracotta' : 'border-transparent text-muted hover:text-charcoal'}`}>{tab.label}</button>)}</nav>; }
