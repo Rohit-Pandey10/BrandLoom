@@ -460,13 +460,13 @@ ${palette.map(c => `  --color-${(c.role || 'color').toLowerCase().replace(/[^a-z
       </main>
 
       {/* Editorial Footer (Shaurya's Design System) */}
-      <footer className="no-print py-6 px-6 text-center text-xs text-zinc-500 border-t border-zinc-200/60 bg-white/40">
+      <footer className="no-print border-t border-line px-6 py-6 text-center text-xs text-muted">
         <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2">
           <p>
             &copy; 2026 BrandLoom. Strategic Positioning, Verbal Identity & Design Systems.
           </p>
-          <div className="flex items-center gap-3 text-zinc-500 font-mono text-xs">
-            <span>Socratic Brand Synthesis</span>
+          <div className="flex items-center gap-3 text-xs">
+            <span>AI Brand Studio</span>
             <span>•</span>
             <span>Design Tokens & Multi-Archetype Specimen</span>
           </div>
