@@ -14,7 +14,7 @@ button,input,select,textarea { font:inherit; }
 .eyebrow { color:var(--muted); font-size:.68rem; font-weight:600; letter-spacing:.16em; text-transform:uppercase; }
 .studio-card { background:var(--surface); border:1px solid var(--line); border-radius:1.5rem; box-shadow:0 8px 24px rgb(72 45 29 / 6%); }
 .canvas-photo { background-image:linear-gradient(145deg,rgb(220 200 177 / 42%),rgb(138 143 106 / 36%)),url('/images/brandloom-editorial-still-life.png'); background-position:center; background-size:cover; }
-.editorial-photo { background-image:linear-gradient(0deg,rgb(43 43 43 / 28%),rgb(43 43 43 / 3%)),url('/images/brandloom-editorial-still-life.png'); background-position:center; background-size:cover; }
+.editorial-photo { background-image:linear-gradient(0deg,rgb(43 43 43 / 18%),rgb(43 43 43 / 2%)),url('/images/brandloom-home-collage.png'); background-position:center; background-size:cover; }
 .editorial-photo-dark { background-image:linear-gradient(0deg,rgb(43 43 43 / 72%),rgb(43 43 43 / 5%)),url('/images/brandloom-editorial-still-life.png'); background-position:center; background-size:cover; }
 .hide-scrollbar::-webkit-scrollbar { display:none; }.hide-scrollbar { scrollbar-width:none; }
 @media (prefers-reduced-motion:reduce) { *,*::before,*::after { animation-duration:.01ms!important; animation-iteration-count:1!important; scroll-behavior:auto!important; transition-duration:.01ms!important; } }
