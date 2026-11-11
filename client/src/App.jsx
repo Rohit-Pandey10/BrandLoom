@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Header from './components/Header';
 import IntakeView from './components/IntakeView';
 import ConceptSelector from './components/ConceptSelector';
@@ -36,6 +36,16 @@ export default function App() {
   } = useAuth();
 
   const [isSaving, setIsSaving] = useState(false);
+
+  // Auto-load demo monograph if #demo hash or ?demo=true param is present
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      const params = new URLSearchParams(window.location.search);
+      if (params.get('demo') === 'true' || window.location.hash === '#demo') {
+        handleLoadSample(SAMPLE_BRAND_KIT);
+      }
+    }
+  }, []);
 
   // Single Source of Truth: Determine isKitSaved dynamically from savedBrands
   const activeBrandName = (brandKit?.brandStrategy?.brandName || '').trim().toLowerCase();

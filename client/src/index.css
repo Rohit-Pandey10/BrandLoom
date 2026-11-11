@@ -10,9 +10,9 @@ body { margin:0; background:var(--canvas); color:var(--charcoal); font-family:In
 button,input,select,textarea { font:inherit; }
 :focus-visible { outline:3px solid color-mix(in srgb,var(--terracotta) 45%,transparent); outline-offset:3px; }
 .app-canvas { min-height:100vh; background:radial-gradient(circle at 10% 6%,rgb(255 255 255 / 55%),transparent 27rem),radial-gradient(circle at 90% 2%,rgb(220 200 177 / 45%),transparent 25rem),var(--canvas); }
-.editorial-heading { font-family:'Playfair Display',Georgia,serif; letter-spacing:-.045em; line-height:.98; }
-.eyebrow { color:var(--muted); font-size:.68rem; font-weight:600; letter-spacing:.16em; text-transform:uppercase; }
-.studio-card { background:var(--surface); border:1px solid var(--line); border-radius:1.5rem; box-shadow:0 8px 24px rgb(72 45 29 / 6%); }
+.editorial-heading { font-family:'Playfair Display',Georgia,serif; letter-spacing:-.025em; line-height:1.06; }
+.eyebrow { font-family:Inter,sans-serif; color:var(--muted); font-size:.72rem; font-weight:600; letter-spacing:.14em; text-transform:uppercase; }
+.studio-card { background:var(--surface); border:1px solid var(--line); border-radius:1.25rem; box-shadow:0 4px 20px rgb(72 45 29 / 4%); }
 .canvas-photo { background-image:linear-gradient(145deg,rgb(220 200 177 / 42%),rgb(138 143 106 / 36%)),url('/images/brandloom-editorial-still-life.png'); background-position:center; background-size:cover; }
 .editorial-photo { background-image:linear-gradient(0deg,rgb(43 43 43 / 18%),rgb(43 43 43 / 2%)),url('/images/brandloom-home-collage.png'); background-position:center; background-size:cover; }
 .editorial-photo-dark { background-image:linear-gradient(0deg,rgb(43 43 43 / 72%),rgb(43 43 43 / 5%)),url('/images/brandloom-editorial-still-life.png'); background-position:center; background-size:cover; }
