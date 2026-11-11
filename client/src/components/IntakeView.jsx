@@ -166,18 +166,18 @@ export default function IntakeView({ onStartInterview, handleLoadSample, isExpan
         <BentoGrid className="gap-6">
           {/* Bento Item 1: Visual Tokens (2 cols) */}
           <BentoGridItem
-            className="md:col-span-2 p-8"
+            className="md:col-span-2"
             title="Synthesized Design Tokens"
             description="Automated WCAG-compliant color systems, typography pairings, and geometry rules exported as CSS custom properties and Figma-ready tokens."
             icon={<Palette className="h-5 w-5 text-terracotta" />}
             badge={<Badge tone="accent">Design Systems</Badge>}
             header={
-              <div className="w-full h-full min-h-[10rem] rounded-xl border border-line bg-[color-mix(in_srgb,var(--canvas)_55%,var(--surface))] p-5 flex flex-col justify-between">
+              <div className="w-full min-h-[9.5rem] rounded-xl border border-line bg-[color-mix(in_srgb,var(--canvas)_55%,var(--surface))] p-4 sm:p-5 flex flex-col justify-between">
                 <div className="flex items-center justify-between text-xs font-medium text-muted">
                   <span>CSS Variables &amp; Tokens</span>
                   <span className="text-terracotta font-semibold">WCAG AAA Certified</span>
                 </div>
-                <div className="grid grid-cols-4 gap-3 my-2">
+                <div className="grid grid-cols-4 gap-2.5 my-2">
                   {[
                     { role: 'Primary', hex: '#2B2B2B', text: 'white' },
                     { role: 'Terracotta', hex: '#C65A3A', text: 'white' },
@@ -186,15 +186,15 @@ export default function IntakeView({ onStartInterview, handleLoadSample, isExpan
                   ].map((s) => (
                     <div
                       key={s.role}
-                      className="rounded-xl p-3 text-xs flex flex-col justify-end shadow-xs"
+                      className="rounded-lg p-2.5 text-xs flex flex-col justify-end shadow-xs"
                       style={{ backgroundColor: s.hex, color: s.text }}
                     >
-                      <span className="text-xs font-semibold">{s.role}</span>
-                      <span className="text-[11px] opacity-85 mt-0.5 font-medium">{s.hex}</span>
+                      <span className="text-[11px] font-semibold">{s.role}</span>
+                      <span className="text-[10px] opacity-85 mt-0.5 font-medium">{s.hex}</span>
                     </div>
                   ))}
                 </div>
-                <div className="text-xs text-muted flex items-center justify-between pt-1">
+                <div className="text-[11px] text-muted flex items-center justify-between pt-1">
                   <span>Typography: Playfair Display + Inter</span>
                   <span>Fluid Scale: 12px – 64px</span>
                 </div>
@@ -204,21 +204,21 @@ export default function IntakeView({ onStartInterview, handleLoadSample, isExpan
 
           {/* Bento Item 2: Socratic Positioning (1 col) */}
           <BentoGridItem
-            className="md:col-span-1 p-8"
+            className="md:col-span-1"
             title="Defensible Positioning"
             description="Extracts your unique 'Onlyness' differentiator and clearly codifies what category conventions your brand explicitly rejects."
             icon={<Compass className="h-5 w-5 text-terracotta" />}
             badge={<Badge tone="neutral">Strategy</Badge>}
             header={
-              <div className="w-full h-full min-h-[10rem] rounded-xl border border-line bg-[color-mix(in_srgb,var(--sand)_20%,var(--surface))] p-5 flex flex-col justify-between text-xs">
+              <div className="w-full min-h-[9.5rem] rounded-xl border border-line bg-[color-mix(in_srgb,var(--sand)_20%,var(--surface))] p-4 sm:p-5 flex flex-col justify-between text-xs">
                 <div className="flex items-center justify-between">
                   <span className="font-semibold text-charcoal">The Onlyness Test</span>
                   <Badge tone="accent">Validated</Badge>
                 </div>
-                <p className="italic text-charcoal text-sm leading-relaxed line-clamp-3">
+                <p className="italic text-charcoal text-xs sm:text-sm leading-relaxed my-2">
                   “The only artisan studio that refuses industrial mass-production in favor of single-origin transparent sourcing.”
                 </p>
-                <div className="text-xs text-terracotta font-semibold">
+                <div className="text-[11px] text-terracotta font-semibold">
                   Anti-Hero Rejected: Corporate Indifference
                 </div>
               </div>
@@ -227,26 +227,26 @@ export default function IntakeView({ onStartInterview, handleLoadSample, isExpan
 
           {/* Bento Item 3: Website Blueprint (1 col) */}
           <BentoGridItem
-            className="md:col-span-1 p-8"
+            className="md:col-span-1"
             title="Live Website Simulator"
             description="Experience your brand applied in real-time across high-conversion heroes, dynamic catalog grids, and responsive viewports."
             icon={<Globe2 className="h-5 w-5 text-terracotta" />}
             badge={<Badge tone="neutral">Interactive</Badge>}
             header={
-              <div className="w-full h-full min-h-[10rem] rounded-xl border border-line bg-white p-4 flex flex-col justify-between">
-                <div className="flex items-center gap-1.5 border-b border-line pb-2.5">
-                  <span className="h-2.5 w-2.5 rounded-full bg-terracotta" />
-                  <span className="h-2.5 w-2.5 rounded-full bg-sand" />
-                  <span className="h-2.5 w-2.5 rounded-full bg-olive" />
-                  <span className="ml-2 text-xs text-muted">preview.brandloom.app</span>
+              <div className="w-full min-h-[9.5rem] rounded-xl border border-line bg-white p-4 flex flex-col justify-between">
+                <div className="flex items-center gap-1.5 border-b border-line pb-2">
+                  <span className="h-2 w-2 rounded-full bg-terracotta" />
+                  <span className="h-2 w-2 rounded-full bg-sand" />
+                  <span className="h-2 w-2 rounded-full bg-olive" />
+                  <span className="ml-2 text-[11px] text-muted">preview.brandloom.app</span>
                 </div>
                 <div className="py-2">
                   <span className="font-serif text-base font-semibold text-charcoal">Blister &amp; Beam</span>
-                  <p className="text-xs text-muted mt-1">Wood-fired sourdough &amp; natural wine.</p>
+                  <p className="text-[11px] text-muted mt-0.5">Wood-fired sourdough &amp; natural wine.</p>
                 </div>
                 <div className="flex gap-2">
-                  <span className="px-3 py-1 rounded-full bg-terracotta text-white text-xs font-semibold">Explore Menu</span>
-                  <span className="px-3 py-1 rounded-full bg-stone-100 text-stone-600 text-xs font-medium">Story</span>
+                  <span className="px-3 py-1 rounded-full bg-terracotta text-white text-[11px] font-semibold">Explore Menu</span>
+                  <span className="px-3 py-1 rounded-full bg-stone-100 text-stone-600 text-[11px] font-medium">Story</span>
                 </div>
               </div>
             }
@@ -254,31 +254,31 @@ export default function IntakeView({ onStartInterview, handleLoadSample, isExpan
 
           {/* Bento Item 4: Universal Exports (2 cols) */}
           <BentoGridItem
-            className="md:col-span-2 p-8"
+            className="md:col-span-2"
             title="Production Code &amp; Dossier Exports"
             description="Download production CSS variables, standalone SVG color books, JSON schemas, or tailored prompts for Lovable, Bolt, and Google Antigravity / v0."
             icon={<PackageOpen className="h-5 w-5 text-terracotta" />}
             badge={<Badge tone="accent">Universal Export</Badge>}
             header={
-              <div className="w-full h-full min-h-[10rem] rounded-xl border border-line bg-[color-mix(in_srgb,var(--surface)_70%,transparent)] p-5 flex flex-col justify-between">
+              <div className="w-full min-h-[9.5rem] rounded-xl border border-line bg-[color-mix(in_srgb,var(--surface)_70%,transparent)] p-4 sm:p-5 flex flex-col justify-between">
                 <div className="flex items-center justify-between">
                   <span className="text-xs font-semibold text-charcoal">Export Artifacts</span>
-                  <span className="text-xs text-muted font-medium">Zero Cloud Lock-in</span>
+                  <span className="text-[11px] text-muted font-medium">Zero Cloud Lock-in</span>
                 </div>
-                <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 my-2">
+                <div className="grid grid-cols-2 sm:grid-cols-4 gap-2.5 my-2">
                   {[
                     { label: 'CSS Tokens', ext: '.css', desc: 'Variables' },
                     { label: 'Palette SVG', ext: '.svg', desc: 'Vector Book' },
                     { label: 'Brand Kit', ext: '.json', desc: 'Full Schema' },
                     { label: 'AI Prompts', ext: '.txt', desc: 'v0 & Lovable' }
                   ].map((f) => (
-                    <div key={f.label} className="p-3 rounded-xl border border-line bg-surface text-center">
+                    <div key={f.label} className="p-2.5 rounded-lg border border-line bg-surface text-center">
                       <span className="text-xs font-semibold text-terracotta block">{f.ext}</span>
-                      <p className="text-xs font-medium text-charcoal mt-1">{f.label}</p>
+                      <p className="text-[11px] font-medium text-charcoal mt-0.5">{f.label}</p>
                     </div>
                   ))}
                 </div>
-                <div className="text-xs text-muted flex items-center justify-between pt-1">
+                <div className="text-[11px] text-muted flex items-center justify-between pt-1">
                   <span>Executive 4-Page Print Dossier Included</span>
                   <span className="text-terracotta font-semibold">One-Click Export &rarr;</span>
                 </div>
