@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <rect width="64" height="64" rx="14" fill="#C65A3A"/>
+  <!-- Interlacing Loom threads mark -->
+  <path d="M18 20C18 16.686 20.686 14 24 14H40C43.314 14 46 16.686 46 20V26C46 29.314 43.314 32 40 32H24C20.686 32 18 34.686 18 38V44C18 47.314 20.686 50 24 50H40C43.314 50 46 47.314 46 44" stroke="#FBF7F1" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M32 14V50" stroke="#FBF7F1" stroke-width="4" stroke-linecap="round" stroke-dasharray="0.1 8"/>
+  <circle cx="32" cy="32" r="3.5" fill="#FBF7F1"/>
+</svg>

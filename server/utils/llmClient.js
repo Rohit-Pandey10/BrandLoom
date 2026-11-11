@@ -1,7 +1,13 @@
 import Groq from 'groq-sdk';
 import { GoogleGenAI } from '@google/genai';
 import dotenv from 'dotenv';
+import path from 'path';
+import { fileURLToPath } from 'url';
 
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+dotenv.config({ path: path.resolve(__dirname, '../../.env') });
+dotenv.config({ path: path.resolve(__dirname, '../.env') });
 dotenv.config();
 
 const groq = process.env.GROQ_API_KEY ? new Groq({ apiKey: process.env.GROQ_API_KEY }) : null;
@@ -18,13 +24,11 @@ export function isLlmConfigured() {
 
 export const getLlmClient = isLlmConfigured;
 
-// Priority list for Groq models with graceful fallback for decommissioned or rate-limited model IDs
+// Priority list for Groq models with graceful fallback
 const GROQ_CANDIDATE_MODELS = [
   process.env.GROQ_MODEL,
-  'qwen/qwen3.8-27b',
-  'openai/gpt-oss-20b',
-  'openai/gpt-oss-120b',
-  'llama-3.3-70b-versatile'
+  'llama-3.3-70b-versatile',
+  'llama-3.1-8b-instant'
 ].filter(Boolean);
 
 /**
